@@ -10,6 +10,7 @@
 #include <string>
 #include <vector>
 #include <mutex>
+#include <memory>
 #include <stdio.h>
 #include <thread>
 #include <map>
