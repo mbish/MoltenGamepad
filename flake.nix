@@ -2,7 +2,7 @@
   description = "Flake for moltengamepad";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-23.11";
   };
 
   outputs = {
