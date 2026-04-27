@@ -2,7 +2,7 @@
   description = "Flake for moltengamepad";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
   outputs = {
@@ -43,5 +43,8 @@
     };
   in {
     packages.x86_64-linux.default = moltengamepad;
+    overlays.x86_64-linux.default = final: prev: {
+      inherit moltengamepad;
+    };
   };
 }
